@@ -1,0 +1,33 @@
+*.class
+*.bin
+*.lock
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# .gradle
+.gradle
+
+# .idea
+.idea
+
+# build
+build
+
+# gradlew -> gradle form linux
+gradlew
+gradlew.bat
+
+# gradle
+gradle
+
+# out
+out
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
