@@ -1,5 +1,6 @@
 package preprocess;
 
+import sun.security.provider.MD5;
 import util.DBConnection;
 
 /**
@@ -8,4 +9,7 @@ import util.DBConnection;
 public class originalPageGetter {
     private String url = "";
     private DBConnection dbc = new DBConnection();
+    private MD5 md5 = new MD5();
+    private String date ="";
+
 }
