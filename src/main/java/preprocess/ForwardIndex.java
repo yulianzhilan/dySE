@@ -21,7 +21,7 @@ public class ForwardIndex {
     public HashMap<String, ArrayList<String>> creatForwordIndex(){
         try{
             ArrayList<String> segResult = new ArrayList<>();
-            String sql = "select * from paggindex";
+            String sql = "select * from pageindex";
             ResultSet rs = dbc.executeQuery(sql);
             String url, fileName;
             int offset;

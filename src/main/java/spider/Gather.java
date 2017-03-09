@@ -1,9 +1,6 @@
 package spider;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 
@@ -22,10 +19,13 @@ public class Gather implements Runnable{
         this.dispatcher = dispatcher;
         this.ID = ID;
 
-        file = new File("Raws\\RAW_"+ID+".txt");
+        file = new File("D:\\SearchEngine\\sources\\RAW_"+ID+".txt");
         try{
-            file.createNewFile();
-            bfWriter = new BufferedWriter(new FileWriter(file));
+            if(!file.exists()){
+                file.createNewFile();
+            }
+            OutputStreamWriter out = new OutputStreamWriter(new FileOutputStream(file),"GBK");
+            bfWriter = new BufferedWriter(out);
         } catch(IOException e){
             e.printStackTrace();
         }

@@ -54,7 +54,7 @@ public class DictSegment {
         return sentance;
     }
 
-    protected ArrayList<String> cutIntoWord(String sentance){
+    public ArrayList<String> cutIntoWord(String sentance){
         int currLen;
         String wait2cut = sentance;
         ArrayList<String> sentanceSegResult = new ArrayList<>();

@@ -19,7 +19,7 @@ public class URLClient {
         try{
             URLConnection conn = hostURL.openConnection();
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String line = null;
+            String line;
             while((line = reader.readLine()) != null){
                 if(!line.trim().isEmpty()){
                     document.append(line+"\n");                }
