@@ -7,13 +7,15 @@ import socket.ThreadPool;
  */
 public class ThreadPoolTester {
     public static void main(String[] args) {
-        if(args.length != 2){
-            System.out.println("*************");
-            System.out.println("task num: ");
-            System.out.println("*************");
-        }
-        int numTasks = Integer.parseInt(args[0]);
-        int poolSize = Integer.parseInt(args[1]);
+//        if(args.length != 2){
+//            System.out.println("*************");
+//            System.out.println("task num: ");
+//            System.out.println("*************");
+//        }
+//        int numTasks = Integer.parseInt(args[0]);
+//        int poolSize = Integer.parseInt(args[1]);
+        int numTasks = 6;
+        int poolSize = 3;
 
         ThreadPool threadPool = new ThreadPool(poolSize);
 
